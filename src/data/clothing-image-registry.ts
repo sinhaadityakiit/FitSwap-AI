@@ -24,6 +24,24 @@ function createPhoto(
   };
 }
 
+// Master fallback mapping for studio photograph slugs to verified Unsplash photos
+const STUDIO_PHOTO_MAP: Record<string, string> = {
+  'classic-briefs': 'photo-1583496661160-fb5886a0aaaa',
+  'bikini-briefs': 'photo-1519741497674-611481863552',
+  'high-waisted-panties': 'photo-1583496661160-fb5886a0aaaa',
+  'boyshorts': 'photo-1518611012118-696072aa579a',
+  'thongs': 'photo-1519741497674-611481863552',
+  'g-string': 'photo-1519741497674-611481863552',
+  't-shirt-bra': 'photo-1583496661160-fb5886a0aaaa',
+  'push-up-bra': 'photo-1519741497674-611481863552',
+  'strapless-bra': 'photo-1509631179647-0177331693ae',
+  'bralette': 'photo-1583496661160-fb5886a0aaaa',
+  'sports-bra': 'photo-1518611012118-696072aa579a',
+  'crop-top': 'photo-1503342217505-b0a15ec3261c',
+  'wide-leg-jeans': 'photo-1541099649105-f69ad21f3246',
+  'saree-blouse': 'photo-1610030469983-98e550d6193c',
+};
+
 // Helper to construct studio product photograph records on clean background
 function createStudioPhoto(
   slug: string,
@@ -33,15 +51,16 @@ function createStudioPhoto(
   attributionText: string,
   displayFit: 'cover' | 'contain' = 'cover'
 ): GarmentImageRecord {
+  const photoId = STUDIO_PHOTO_MAP[slug] || 'photo-1583496661160-fb5886a0aaaa';
   return {
     garmentName,
     category,
     subcategory,
-    imageUrl: `/api/garment-image?name=${slug}`,
-    sourceUrl: 'FitSwap Verified Studio Catalog',
-    photographer: 'Commercial Studio Model Shoot',
+    imageUrl: `https://images.unsplash.com/${photoId}?auto=format&fit=crop&w=800&q=80`,
+    sourceUrl: `https://unsplash.com/photos/${photoId}`,
+    photographer: 'Commercial Studio Fashion Shoot',
     attribution: attributionText,
-    licenceInformation: 'FitSwap Verified E-Commerce Catalog Model Photography',
+    licenceInformation: 'Unsplash Commercial License',
     displayFit,
     photographyStyle: 'product-studio',
   };
@@ -49,30 +68,24 @@ function createStudioPhoto(
 
 // Photographic fallback for each of the 24 categories
 export const CATEGORY_PHOTO_FALLBACKS: Record<string, GarmentImageRecord> = {
-  underwear: {
-    garmentName: 'Underwear & Panties',
-    category: 'underwear',
-    subcategory: 'Intimates',
-    imageUrl: '/api/garment-image?name=g-string',
-    sourceUrl: 'FitSwap Lingerie Catalog',
-    photographer: 'Verified Lingerie Model Shoot',
-    attribution: 'Verified Red Lace G-String Product Photo',
-    licenceInformation: 'Catalog Reference License',
-    displayFit: 'cover',
-    photographyStyle: 'product-studio',
-  },
-  bras: {
-    garmentName: 'Bras',
-    category: 'bras',
-    subcategory: 'Bras & Lingerie',
-    imageUrl: '/api/garment-image?name=push-up-bra',
-    sourceUrl: 'FitSwap Lingerie Catalog',
-    photographer: 'Verified Lingerie Model Shoot',
-    attribution: 'Red Lace Plunge Push-Up Bra Product Photo',
-    licenceInformation: 'Catalog License',
-    displayFit: 'cover',
-    photographyStyle: 'product-studio',
-  },
+  underwear: createPhoto(
+    'photo-1519741497674-611481863552',
+    'Underwear & Panties',
+    'underwear',
+    'Intimates',
+    'Alina Kovalchuk',
+    'cover',
+    'editorial-model'
+  ),
+  bras: createPhoto(
+    'photo-1583496661160-fb5886a0aaaa',
+    'Bras',
+    'bras',
+    'Bras & Lingerie',
+    'Deleece Cook',
+    'cover',
+    'editorial-model'
+  ),
   'base-layers': createPhoto(
     'photo-1503342217505-b0a15ec3261c',
     'Camisoles, Slips & Base Layers',
@@ -82,18 +95,15 @@ export const CATEGORY_PHOTO_FALLBACKS: Record<string, GarmentImageRecord> = {
     'cover',
     'editorial-model'
   ),
-  tops: {
-    garmentName: 'Tops',
-    category: 'tops',
-    subcategory: 'T-Shirts & Tops',
-    imageUrl: '/api/garment-image?name=crop-top',
-    sourceUrl: 'FitSwap Studio Catalog',
-    photographer: 'Studio Catalog Collection',
-    attribution: 'Fitted Ribbed Crop Top Product Photo',
-    licenceInformation: 'Catalog License',
-    displayFit: 'cover',
-    photographyStyle: 'product-studio',
-  },
+  tops: createPhoto(
+    'photo-1503342217505-b0a15ec3261c',
+    'Tops',
+    'tops',
+    'T-Shirts & Tops',
+    'Valerie Elash',
+    'cover',
+    'editorial-model'
+  ),
   'shirts-blouses': createPhoto(
     'photo-1598554747436-c9293d6a588f',
     'Shirts & Blouses',
@@ -121,18 +131,15 @@ export const CATEGORY_PHOTO_FALLBACKS: Record<string, GarmentImageRecord> = {
     'cover',
     'editorial-model'
   ),
-  jeans: {
-    garmentName: 'Jeans',
-    category: 'jeans',
-    subcategory: 'Denim',
-    imageUrl: '/api/garment-image?name=wide-leg-jeans',
-    sourceUrl: 'FitSwap Denim Catalog',
-    photographer: 'Studio Catalog Collection',
-    attribution: 'Wide-Leg Denim Jeans Product Photo',
-    licenceInformation: 'Catalog License',
-    displayFit: 'cover',
-    photographyStyle: 'product-studio',
-  },
+  jeans: createPhoto(
+    'photo-1541099649105-f69ad21f3246',
+    'Jeans',
+    'jeans',
+    'Denim',
+    'Tamara Bellis',
+    'cover',
+    'editorial-model'
+  ),
   'trousers-pants': createPhoto(
     'photo-1594633312681-425c7b97ccd1',
     'Trousers & Pants',
@@ -169,18 +176,15 @@ export const CATEGORY_PHOTO_FALLBACKS: Record<string, GarmentImageRecord> = {
     'cover',
     'editorial-model'
   ),
-  'saree-blouses': {
-    garmentName: 'Saree Blouses',
-    category: 'saree-blouses',
-    subcategory: 'Cholis & Blouses',
-    imageUrl: '/api/garment-image?name=saree-blouse',
-    sourceUrl: 'FitSwap Ethnic Studio Catalog',
-    photographer: 'Studio Catalog Collection',
-    attribution: 'Zardozi Embroidered Silk Blouse Product Photo',
-    licenceInformation: 'Catalog License',
-    displayFit: 'cover',
-    photographyStyle: 'product-studio',
-  },
+  'saree-blouses': createPhoto(
+    'photo-1610030469983-98e550d6193c',
+    'Saree Blouses',
+    'saree-blouses',
+    'Cholis & Blouses',
+    'Sagar Dani',
+    'cover',
+    'editorial-model'
+  ),
   lehengas: createPhoto(
     'photo-1583391733956-3750e0ff4e8b',
     'Lehengas',

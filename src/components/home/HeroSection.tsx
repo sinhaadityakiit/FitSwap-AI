@@ -171,6 +171,13 @@ export default function HeroSection() {
           </div>
         </div>
       </div>
+
+      {/* Website Address at Bottom-Right Corner of Banner */}
+      <div className="absolute bottom-3 right-4 sm:right-6 lg:right-8 z-20 pointer-events-none select-none">
+        <span className="text-xs sm:text-[13px] text-zinc-400 font-medium tracking-wide">
+          fitswap-ai.vercel.app
+        </span>
+      </div>
     </section>
   );
 }
