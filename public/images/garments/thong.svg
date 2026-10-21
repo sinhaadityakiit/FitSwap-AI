@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#181329"/>
+      <stop offset="100%" stop-color="#0e0a1a"/>
+    </linearGradient>
+    <linearGradient id="fabric" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#ec4899"/>
+      <stop offset="100%" stop-color="#be185d"/>
+    </linearGradient>
+    <filter id="shadow">
+      <feDropShadow dx="0" dy="6" stdDeviation="5" flood-color="#000" flood-opacity="0.4"/>
+    </filter>
+  </defs>
+  <rect width="400" height="400" rx="32" fill="url(#bg)"/>
+  <circle cx="200" cy="200" r="140" fill="#221a38" opacity="0.4"/>
+
+  <!-- Thong silhouette: Waistband and V-cut front -->
+  <!-- Left waistband -->
+  <path d="M 50 160 Q 120 185 170 190" stroke="#f472b6" stroke-width="8" stroke-linecap="round" fill="none" filter="url(#shadow)"/>
+  <!-- Right waistband -->
+  <path d="M 350 160 Q 280 185 230 190" stroke="#f472b6" stroke-width="8" stroke-linecap="round" fill="none" filter="url(#shadow)"/>
+
+  <!-- Front Shield -->
+  <path d="M 160 190 Q 200 185 240 190 L 215 285 Q 200 300 185 285 Z" fill="url(#fabric)" filter="url(#shadow)"/>
+
+  <!-- High-cut leg openings curve -->
+  <path d="M 160 190 Q 185 230 185 285" stroke="#fbcfe8" stroke-width="2" fill="none"/>
+  <path d="M 240 190 Q 215 230 215 285" stroke="#fbcfe8" stroke-width="2" fill="none"/>
+
+  <!-- Center bow -->
+  <circle cx="200" cy="188" r="4" fill="#fbcfe8"/>
+
+  <!-- Badge -->
+  <rect x="140" y="340" width="120" height="28" rx="14" fill="#1f1836" stroke="#ec4899" stroke-width="1"/>
+  <text x="200" y="358" font-family="sans-serif" font-size="11" font-weight="bold" fill="#fbcfe8" text-anchor="middle">REAL THONG</text>
+</svg>

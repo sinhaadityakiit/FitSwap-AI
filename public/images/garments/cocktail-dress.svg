@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#181329"/>
+      <stop offset="100%" stop-color="#0e0a1a"/>
+    </linearGradient>
+    <linearGradient id="satinDress" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#701a75"/>
+      <stop offset="50%" stop-color="#4a044e"/>
+      <stop offset="100%" stop-color="#2e1065"/>
+    </linearGradient>
+    <filter id="shadow">
+      <feDropShadow dx="0" dy="6" stdDeviation="6" flood-color="#000" flood-opacity="0.4"/>
+    </filter>
+  </defs>
+  <rect width="400" height="400" rx="32" fill="url(#bg)"/>
+  <circle cx="200" cy="200" r="140" fill="#221a38" opacity="0.4"/>
+
+  <!-- Fitted Silhouette Cocktail Dress -->
+  <!-- Sweetheart Bodice & Spaghetti Straps -->
+  <path d="M 150 90 L 155 125" stroke="#e879f9" stroke-width="2.5" fill="none"/>
+  <path d="M 250 90 L 245 125" stroke="#e879f9" stroke-width="2.5" fill="none"/>
+
+  <path d="M 140 125 C 160 115 180 135 200 125 C 220 135 240 115 260 125 L 245 190 Q 255 240 240 290 L 160 290 Q 145 240 155 190 Z" fill="url(#satinDress)" filter="url(#shadow)"/>
+
+  <!-- Ruching & Draping Folds -->
+  <path d="M 155 190 Q 200 205 245 190" stroke="#c084fc" stroke-width="2" fill="none"/>
+  <path d="M 152 215 Q 200 230 248 215" stroke="#c084fc" stroke-width="2" fill="none"/>
+  <path d="M 156 240 Q 200 255 244 240" stroke="#c084fc" stroke-width="2" fill="none"/>
+  <path d="M 158 265 Q 200 278 242 265" stroke="#c084fc" stroke-width="2" fill="none"/>
+
+  <!-- Label Badge -->
+  <rect x="120" y="340" width="160" height="28" rx="14" fill="#1f1836" stroke="#c084fc" stroke-width="1"/>
+  <text x="200" y="358" font-family="sans-serif" font-size="11" font-weight="bold" fill="#f5d0fe" text-anchor="middle">REAL COCKTAIL DRESS</text>
+</svg>

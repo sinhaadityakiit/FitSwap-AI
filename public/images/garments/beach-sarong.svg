@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#181329"/>
+      <stop offset="100%" stop-color="#0e0a1a"/>
+    </linearGradient>
+    <linearGradient id="sarong" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#2dd4bf"/>
+      <stop offset="50%" stop-color="#0d9488"/>
+      <stop offset="100%" stop-color="#115e59"/>
+    </linearGradient>
+    <filter id="shadow">
+      <feDropShadow dx="0" dy="6" stdDeviation="5" flood-color="#000" flood-opacity="0.4"/>
+    </filter>
+  </defs>
+  <rect width="400" height="400" rx="32" fill="url(#bg)"/>
+  <circle cx="200" cy="200" r="140" fill="#221a38" opacity="0.4"/>
+
+  <!-- BEACH SARONG / COVER-UP WRAP -->
+  <!-- Hip Knot / Tied Sash at the side -->
+  <circle cx="130" cy="165" r="12" fill="#5eead4" filter="url(#shadow)"/>
+  <path d="M 125 170 Q 110 210 100 240 L 115 245 Q 130 205 135 175 Z" fill="#2dd4bf"/>
+  <path d="M 135 170 Q 140 215 135 250 L 148 245 Q 148 205 140 175 Z" fill="#14b8a6"/>
+
+  <!-- Wrapped Flowing Sarong Skirt with Side Slit -->
+  <path d="M 130 165 Q 210 160 270 175 Q 285 240 280 300 Q 210 320 160 305 Q 145 270 140 220 Q 135 190 130 165 Z" fill="url(#sarong)" opacity="0.9" filter="url(#shadow)"/>
+
+  <!-- Sheer/Chiffon Flowing Folds & Print Lines -->
+  <path d="M 145 180 Q 200 220 230 305" stroke="#99f6e4" stroke-width="2" fill="none" opacity="0.6"/>
+  <path d="M 180 170 Q 225 210 260 295" stroke="#99f6e4" stroke-width="2" fill="none" opacity="0.6"/>
+  <path d="M 215 170 Q 245 210 275 285" stroke="#99f6e4" stroke-width="2" fill="none" opacity="0.6"/>
+
+  <!-- Bottom Hem Fringe/Lace -->
+  <path d="M 160 305 Q 210 320 280 300" stroke="#ccfbf1" stroke-width="3" stroke-dasharray="3,3" fill="none"/>
+
+  <!-- Label Badge -->
+  <rect x="110" y="340" width="180" height="28" rx="14" fill="#1f1836" stroke="#2dd4bf" stroke-width="1"/>
+  <text x="200" y="358" font-family="sans-serif" font-size="11" font-weight="bold" fill="#99f6e4" text-anchor="middle">REAL BEACH COVER-UP</text>
+</svg>

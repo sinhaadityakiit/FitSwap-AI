@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#181329"/>
+      <stop offset="100%" stop-color="#0e0a1a"/>
+    </linearGradient>
+    <linearGradient id="leather" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#a855f7"/>
+      <stop offset="50%" stop-color="#7e22ce"/>
+      <stop offset="100%" stop-color="#581c87"/>
+    </linearGradient>
+    <filter id="shadow">
+      <feDropShadow dx="0" dy="6" stdDeviation="5" flood-color="#000" flood-opacity="0.4"/>
+    </filter>
+  </defs>
+  <rect width="400" height="400" rx="32" fill="url(#bg)"/>
+  <circle cx="200" cy="200" r="140" fill="#221a38" opacity="0.4"/>
+
+  <!-- LUXURY QUILTED SHOULDER HANDBAG -->
+  <!-- Gold Chain Shoulder Strap -->
+  <path d="M 150 180 Q 150 90 200 90 Q 250 90 250 180" stroke="#facc15" stroke-width="5" stroke-linecap="round" fill="none" filter="url(#shadow)"/>
+  <circle cx="150" cy="180" r="7" fill="#ca8a04"/>
+  <circle cx="250" cy="180" r="7" fill="#ca8a04"/>
+
+  <!-- Trapezoidal Flap Bag Body -->
+  <path d="M 115 180 L 285 180 L 295 295 L 105 295 Z" fill="url(#leather)" filter="url(#shadow)"/>
+
+  <!-- Front Closure Flap -->
+  <path d="M 115 180 L 285 180 L 280 250 L 200 270 L 120 250 Z" fill="#6b21a8" filter="url(#shadow)"/>
+
+  <!-- Quilted Diamond Stitching Pattern -->
+  <path d="M 130 185 L 200 255 L 270 185" stroke="#c084fc" stroke-width="1.5" stroke-dasharray="3,2" fill="none" opacity="0.7"/>
+  <path d="M 160 185 L 200 225 L 240 185" stroke="#c084fc" stroke-width="1.5" stroke-dasharray="3,2" fill="none" opacity="0.7"/>
+
+  <!-- Polished Gold Turn-Lock Clasp -->
+  <rect x="190" y="250" width="20" height="15" rx="3" fill="#facc15" stroke="#ca8a04" stroke-width="1.5"/>
+  <ellipse cx="200" cy="257" rx="3" ry="5" fill="#ca8a04"/>
+
+  <!-- Label Badge -->
+  <rect x="120" y="340" width="160" height="28" rx="14" fill="#1f1836" stroke="#c084fc" stroke-width="1"/>
+  <text x="200" y="358" font-family="sans-serif" font-size="11" font-weight="bold" fill="#f3e8ff" text-anchor="middle">REAL LUXURY BAG</text>
+</svg>

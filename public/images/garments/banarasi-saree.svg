@@ -1,0 +1,55 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#181329"/>
+      <stop offset="100%" stop-color="#0e0a1a"/>
+    </linearGradient>
+    <linearGradient id="sareeCrimson" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#991b1b"/>
+      <stop offset="50%" stop-color="#b91c1c"/>
+      <stop offset="100%" stop-color="#7f1d1d"/>
+    </linearGradient>
+    <linearGradient id="goldZari" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#fef08a"/>
+      <stop offset="50%" stop-color="#eab308"/>
+      <stop offset="100%" stop-color="#ca8a04"/>
+    </linearGradient>
+    <filter id="shadow">
+      <feDropShadow dx="0" dy="6" stdDeviation="6" flood-color="#000" flood-opacity="0.4"/>
+    </filter>
+  </defs>
+  <rect width="400" height="400" rx="32" fill="url(#bg)"/>
+  <circle cx="200" cy="200" r="140" fill="#221a38" opacity="0.4"/>
+
+  <!-- Saree Drape Body: Pleated Waist & Diagonal Pallu -->
+  <!-- Blouse Top -->
+  <path d="M 140 100 L 260 100 L 250 145 L 150 145 Z" fill="url(#goldZari)" filter="url(#shadow)"/>
+  
+  <!-- Diagonal Pallu sweeping across chest to shoulder -->
+  <path d="M 130 110 Q 180 160 210 220 L 175 240 Q 150 170 115 110 Z" fill="url(#sareeCrimson)" filter="url(#shadow)"/>
+  <!-- Gold Zari Pallu Border -->
+  <path d="M 115 110 Q 150 170 175 240" stroke="url(#goldZari)" stroke-width="8" fill="none"/>
+
+  <!-- Saree Pleats Skirt Ghera -->
+  <path d="M 135 180 Q 200 175 265 180 L 295 310 Q 200 325 105 310 Z" fill="url(#sareeCrimson)" filter="url(#shadow)"/>
+
+  <!-- Ornate Banarasi Gold Zari Hem Border -->
+  <path d="M 105 300 Q 200 315 295 300 L 295 315 Q 200 330 105 315 Z" fill="url(#goldZari)"/>
+
+  <!-- Traditional Paisley (Kalka/Buta) Gold Motifs -->
+  <circle cx="160" cy="220" r="4" fill="url(#goldZari)"/>
+  <circle cx="200" cy="210" r="4" fill="url(#goldZari)"/>
+  <circle cx="240" cy="225" r="4" fill="url(#goldZari)"/>
+  <circle cx="170" cy="260" r="4.5" fill="url(#goldZari)"/>
+  <circle cx="220" cy="255" r="4.5" fill="url(#goldZari)"/>
+  <circle cx="265" cy="270" r="4" fill="url(#goldZari)"/>
+
+  <!-- Pleat Vertical Folds -->
+  <path d="M 185 180 L 185 305" stroke="#7f1d1d" stroke-width="2"/>
+  <path d="M 200 180 L 200 310" stroke="#7f1d1d" stroke-width="2"/>
+  <path d="M 215 180 L 215 305" stroke="#7f1d1d" stroke-width="2"/>
+
+  <!-- Label Badge -->
+  <rect x="120" y="340" width="160" height="28" rx="14" fill="#1f1836" stroke="#eab308" stroke-width="1"/>
+  <text x="200" y="358" font-family="sans-serif" font-size="11" font-weight="bold" fill="#fef08a" text-anchor="middle">REAL BANARASI SAREE</text>
+</svg>

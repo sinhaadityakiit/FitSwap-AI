@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#181329"/>
+      <stop offset="100%" stop-color="#0e0a1a"/>
+    </linearGradient>
+    <linearGradient id="short" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#818cf8"/>
+      <stop offset="50%" stop-color="#6366f1"/>
+      <stop offset="100%" stop-color="#4f46e5"/>
+    </linearGradient>
+    <filter id="shadow">
+      <feDropShadow dx="0" dy="6" stdDeviation="5" flood-color="#000" flood-opacity="0.4"/>
+    </filter>
+  </defs>
+  <rect width="400" height="400" rx="32" fill="url(#bg)"/>
+  <circle cx="200" cy="200" r="140" fill="#221a38" opacity="0.4"/>
+
+  <!-- BOYSHORTS PANTIES / SEAMLESS SHORTIES -->
+  <!-- Wide Elastic Waistband -->
+  <path d="M 100 160 Q 200 170 300 160 L 305 185 Q 200 195 95 185 Z" fill="#4338ca" filter="url(#shadow)"/>
+  <path d="M 100 165 Q 200 175 300 165" stroke="#c7d2fe" stroke-width="1.5" fill="none"/>
+
+  <!-- Low-cut Leg Boxy Boyshort Body -->
+  <path d="M 95 185 L 85 270 L 175 270 L 195 240 L 205 240 L 225 270 L 315 270 L 305 185 Q 200 195 95 185 Z" fill="url(#short)" filter="url(#shadow)"/>
+
+  <!-- Left Leg Inseam & Hem -->
+  <path d="M 85 270 L 175 270" stroke="#a5b4fc" stroke-width="2.5"/>
+  <!-- Right Leg Inseam & Hem -->
+  <path d="M 225 270 L 315 270" stroke="#a5b4fc" stroke-width="2.5"/>
+
+  <!-- Center Crotch Gusset & Ergonomic Seams -->
+  <path d="M 175 270 Q 200 240 225 270" stroke="#c7d2fe" stroke-width="2" fill="none"/>
+  <path d="M 200 195 L 200 240" stroke="#a5b4fc" stroke-width="1.5" stroke-dasharray="3,3"/>
+
+  <!-- Delicate center ribbon bow -->
+  <circle cx="200" cy="180" r="3.5" fill="#e0e7ff"/>
+
+  <!-- Label Badge -->
+  <rect x="120" y="340" width="160" height="28" rx="14" fill="#1f1836" stroke="#6366f1" stroke-width="1"/>
+  <text x="200" y="358" font-family="sans-serif" font-size="11" font-weight="bold" fill="#c7d2fe" text-anchor="middle">REAL BOYSHORTS</text>
+</svg>

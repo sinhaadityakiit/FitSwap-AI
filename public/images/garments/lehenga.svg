@@ -1,0 +1,55 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#181329"/>
+      <stop offset="100%" stop-color="#0e0a1a"/>
+    </linearGradient>
+    <linearGradient id="lehengaSilk" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#db2777"/>
+      <stop offset="50%" stop-color="#be185d"/>
+      <stop offset="100%" stop-color="#9d174d"/>
+    </linearGradient>
+    <linearGradient id="gold" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#fef08a"/>
+      <stop offset="100%" stop-color="#eab308"/>
+    </linearGradient>
+    <filter id="shadow">
+      <feDropShadow dx="0" dy="6" stdDeviation="6" flood-color="#000" flood-opacity="0.4"/>
+    </filter>
+  </defs>
+  <rect width="400" height="400" rx="32" fill="url(#bg)"/>
+  <circle cx="200" cy="200" r="140" fill="#221a38" opacity="0.4"/>
+
+  <!-- Choli Blouse -->
+  <path d="M 145 95 L 255 95 L 245 145 L 155 145 Z" fill="url(#lehengaSilk)" filter="url(#shadow)"/>
+  <path d="M 145 95 Q 200 120 255 95" stroke="url(#gold)" stroke-width="3" fill="none"/>
+
+  <!-- Midriff space -->
+  
+  <!-- Flared Lehenga Kalidar Skirt -->
+  <path d="M 150 170 Q 200 165 250 170 L 325 310 Q 200 335 75 310 Z" fill="url(#lehengaSilk)" filter="url(#shadow)"/>
+
+  <!-- Heavy Gold Zari Border at Hem -->
+  <path d="M 75 295 Q 200 320 325 295 L 325 310 Q 200 335 75 310 Z" fill="url(#gold)"/>
+
+  <!-- Kalidar Panels -->
+  <path d="M 170 170 L 120 305" stroke="#be185d" stroke-width="2"/>
+  <path d="M 190 168 L 175 315" stroke="#be185d" stroke-width="2"/>
+  <path d="M 210 168 L 225 315" stroke="#be185d" stroke-width="2"/>
+  <path d="M 230 170 L 280 305" stroke="#be185d" stroke-width="2"/>
+
+  <!-- Mirror-work & Zardozi Motifs -->
+  <circle cx="160" cy="225" r="5" fill="#ffffff" stroke="url(#gold)" stroke-width="2"/>
+  <circle cx="200" cy="215" r="5" fill="#ffffff" stroke="url(#gold)" stroke-width="2"/>
+  <circle cx="240" cy="225" r="5" fill="#ffffff" stroke="url(#gold)" stroke-width="2"/>
+  <circle cx="130" cy="265" r="5" fill="#ffffff" stroke="url(#gold)" stroke-width="2"/>
+  <circle cx="200" cy="260" r="5.5" fill="#ffffff" stroke="url(#gold)" stroke-width="2"/>
+  <circle cx="270" cy="265" r="5" fill="#ffffff" stroke="url(#gold)" stroke-width="2"/>
+
+  <!-- Net Dupatta Drapery -->
+  <path d="M 130 100 Q 110 200 140 280" stroke="#fbcfe8" stroke-width="6" fill="none" opacity="0.6"/>
+
+  <!-- Label Badge -->
+  <rect x="130" y="340" width="140" height="28" rx="14" fill="#1f1836" stroke="#db2777" stroke-width="1"/>
+  <text x="200" y="358" font-family="sans-serif" font-size="11" font-weight="bold" fill="#fbcfe8" text-anchor="middle">REAL LEHENGA</text>
+</svg>

@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#181329"/>
+      <stop offset="100%" stop-color="#0e0a1a"/>
+    </linearGradient>
+    <linearGradient id="suit" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#34d399"/>
+      <stop offset="50%" stop-color="#059669"/>
+      <stop offset="100%" stop-color="#065f46"/>
+    </linearGradient>
+    <filter id="shadow">
+      <feDropShadow dx="0" dy="6" stdDeviation="5" flood-color="#000" flood-opacity="0.4"/>
+    </filter>
+  </defs>
+  <rect width="400" height="400" rx="32" fill="url(#bg)"/>
+  <circle cx="200" cy="200" r="140" fill="#221a38" opacity="0.4"/>
+
+  <!-- TAILORED SLEEVELESS JUMPSUIT WITH WIDE LEG -->
+  <!-- V-Neck Bodice & Straps -->
+  <path d="M 145 90 L 155 130 Q 200 160 245 130 L 255 90" stroke="#6ee7b7" stroke-width="8" stroke-linecap="round" fill="none"/>
+
+  <!-- Jumpsuit Body & Flowing Wide Legs -->
+  <path d="M 155 130 Q 200 160 245 130 L 255 190 Q 200 195 145 190 Z" fill="url(#suit)" filter="url(#shadow)"/>
+  
+  <!-- Tie Sash Waistband -->
+  <rect x="140" y="185" width="120" height="15" rx="4" fill="#047857"/>
+  <circle cx="200" cy="192" r="5" fill="#a7f3d0"/>
+
+  <!-- Wide-Leg Pant Flow -->
+  <path d="M 140 200 L 110 320 L 185 320 L 195 240 L 205 240 L 215 320 L 290 320 L 260 200 Z" fill="url(#suit)" filter="url(#shadow)"/>
+
+  <!-- Center Pressed Crease Lines -->
+  <line x1="147" y1="215" x2="147" y2="315" stroke="#a7f3d0" stroke-width="1.5" opacity="0.7"/>
+  <line x1="253" y1="215" x2="253" y2="315" stroke="#a7f3d0" stroke-width="1.5" opacity="0.7"/>
+
+  <!-- Label Badge -->
+  <rect x="120" y="340" width="160" height="28" rx="14" fill="#1f1836" stroke="#10b981" stroke-width="1"/>
+  <text x="200" y="358" font-family="sans-serif" font-size="11" font-weight="bold" fill="#a7f3d0" text-anchor="middle">REAL JUMPSUIT</text>
+</svg>

@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#181329"/>
+      <stop offset="100%" stop-color="#0e0a1a"/>
+    </linearGradient>
+    <linearGradient id="patent" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#f43f5e"/>
+      <stop offset="50%" stop-color="#be123c"/>
+      <stop offset="100%" stop-color="#881337"/>
+    </linearGradient>
+    <filter id="shadow">
+      <feDropShadow dx="0" dy="6" stdDeviation="5" flood-color="#000" flood-opacity="0.4"/>
+    </filter>
+  </defs>
+  <rect width="400" height="400" rx="32" fill="url(#bg)"/>
+  <circle cx="200" cy="200" r="140" fill="#221a38" opacity="0.4"/>
+
+  <!-- DESIGNER STILETTO HIGH HEEL PUMP -->
+  <!-- Stiletto Spike Heel -->
+  <path d="M 135 220 L 125 315 L 135 315 L 150 220 Z" fill="#4c0519" filter="url(#shadow)"/>
+  <rect x="123" y="312" width="14" height="4" rx="1" fill="#facc15"/>
+
+  <!-- Pointed Toe Pump Arch & Upper Silhouette -->
+  <path d="M 125 210 Q 150 170 190 200 Q 235 235 305 285 L 325 295 Q 310 305 255 300 Q 185 275 145 220 Z" fill="url(#patent)" filter="url(#shadow)"/>
+
+  <!-- Inner Foot Opening & Insole -->
+  <path d="M 140 215 Q 170 185 210 220 Q 240 245 270 270 Q 220 245 175 225 Z" fill="#ffe4e6"/>
+
+  <!-- Iconic Glossy Patent Leather Highlights -->
+  <path d="M 195 205 Q 235 235 290 280" stroke="#fecdd3" stroke-width="2.5" stroke-linecap="round" fill="none" opacity="0.8"/>
+  <path d="M 130 215 Q 145 180 170 190" stroke="#fecdd3" stroke-width="2" stroke-linecap="round" fill="none" opacity="0.8"/>
+
+  <!-- Label Badge -->
+  <rect x="120" y="340" width="160" height="28" rx="14" fill="#1f1836" stroke="#f43f5e" stroke-width="1"/>
+  <text x="200" y="358" font-family="sans-serif" font-size="11" font-weight="bold" fill="#fda4af" text-anchor="middle">REAL HIGH HEELS</text>
+</svg>

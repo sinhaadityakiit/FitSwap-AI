@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#181329"/>
+      <stop offset="100%" stop-color="#0e0a1a"/>
+    </linearGradient>
+    <linearGradient id="swimsuit" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#06b6d4"/>
+      <stop offset="50%" stop-color="#0284c7"/>
+      <stop offset="100%" stop-color="#0369a1"/>
+    </linearGradient>
+    <filter id="shadow">
+      <feDropShadow dx="0" dy="6" stdDeviation="5" flood-color="#000" flood-opacity="0.4"/>
+    </filter>
+  </defs>
+  <rect width="400" height="400" rx="32" fill="url(#bg)"/>
+  <circle cx="200" cy="200" r="140" fill="#221a38" opacity="0.4"/>
+
+  <!-- ONE-PIECE SWIMSUIT SILHOUETTE -->
+  <!-- Scoop Neckline & Straps -->
+  <path d="M 140 85 L 145 130 Q 200 160 255 130 L 260 85" stroke="#38bdf8" stroke-width="8" stroke-linecap="round" fill="none"/>
+  
+  <!-- Main Torso Bodysuit Contours -->
+  <path d="M 145 130 Q 115 160 125 210 Q 135 250 160 290 Q 200 310 240 290 Q 265 250 275 210 Q 285 160 255 130 Q 200 160 145 130 Z" fill="url(#swimsuit)" filter="url(#shadow)"/>
+
+  <!-- High-cut leg openings accent piping -->
+  <path d="M 160 290 Q 175 260 200 260 Q 225 260 240 290" stroke="#7dd3fc" stroke-width="2.5" fill="none"/>
+  
+  <!-- Plunge/Contour seam details -->
+  <path d="M 170 170 Q 200 190 230 170" stroke="#7dd3fc" stroke-width="1.5" stroke-dasharray="4,4" fill="none"/>
+  <path d="M 160 210 Q 200 230 240 210" stroke="#7dd3fc" stroke-width="1.5" stroke-dasharray="4,4" fill="none"/>
+
+  <!-- Label Badge -->
+  <rect x="110" y="340" width="180" height="28" rx="14" fill="#1f1836" stroke="#06b6d4" stroke-width="1"/>
+  <text x="200" y="358" font-family="sans-serif" font-size="11" font-weight="bold" fill="#7dd3fc" text-anchor="middle">REAL ONE-PIECE SWIMSUIT</text>
+</svg>

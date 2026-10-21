@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#181329"/>
+      <stop offset="100%" stop-color="#0e0a1a"/>
+    </linearGradient>
+    <linearGradient id="skirt" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#f43f5e"/>
+      <stop offset="50%" stop-color="#e11d48"/>
+      <stop offset="100%" stop-color="#9f1239"/>
+    </linearGradient>
+    <filter id="shadow">
+      <feDropShadow dx="0" dy="6" stdDeviation="5" flood-color="#000" flood-opacity="0.4"/>
+    </filter>
+  </defs>
+  <rect width="400" height="400" rx="32" fill="url(#bg)"/>
+  <circle cx="200" cy="200" r="140" fill="#221a38" opacity="0.4"/>
+
+  <!-- PLEATED TENNIS / MINI SKIRT -->
+  <!-- High Waistband -->
+  <path d="M 130 150 Q 200 160 270 150 L 275 175 Q 200 185 125 175 Z" fill="#881337" filter="url(#shadow)"/>
+
+  <!-- Flared Pleated Skirt Body -->
+  <path d="M 125 175 Q 200 185 275 175 L 320 295 Q 200 315 80 295 Z" fill="url(#skirt)" filter="url(#shadow)"/>
+
+  <!-- Crisp Accordion Pleats -->
+  <path d="M 140 177 L 110 297" stroke="#fda4af" stroke-width="2"/>
+  <path d="M 160 180 L 140 302" stroke="#fda4af" stroke-width="2"/>
+  <path d="M 180 182 L 170 305" stroke="#fda4af" stroke-width="2"/>
+  <path d="M 200 183 L 200 307" stroke="#fda4af" stroke-width="2"/>
+  <path d="M 220 182 L 230 305" stroke="#fda4af" stroke-width="2"/>
+  <path d="M 240 180 L 260 302" stroke="#fda4af" stroke-width="2"/>
+  <path d="M 260 177 L 290 297" stroke="#fda4af" stroke-width="2"/>
+
+  <!-- Label Badge -->
+  <rect x="110" y="340" width="180" height="28" rx="14" fill="#1f1836" stroke="#f43f5e" stroke-width="1"/>
+  <text x="200" y="358" font-family="sans-serif" font-size="11" font-weight="bold" fill="#fecdd3" text-anchor="middle">REAL PLEATED SKIRT</text>
+</svg>

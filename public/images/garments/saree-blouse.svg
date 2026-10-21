@@ -1,0 +1,46 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#181329"/>
+      <stop offset="100%" stop-color="#0e0a1a"/>
+    </linearGradient>
+    <linearGradient id="brocade" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#fb7185"/>
+      <stop offset="50%" stop-color="#e11d48"/>
+      <stop offset="100%" stop-color="#9f1239"/>
+    </linearGradient>
+    <filter id="shadow">
+      <feDropShadow dx="0" dy="6" stdDeviation="5" flood-color="#000" flood-opacity="0.4"/>
+    </filter>
+  </defs>
+  <rect width="400" height="400" rx="32" fill="url(#bg)"/>
+  <circle cx="200" cy="200" r="140" fill="#221a38" opacity="0.4"/>
+
+  <!-- EMBROIDERED SAREE BLOUSE / CHOLI -->
+  <!-- Short Sleeves with Gold Zari Border -->
+  <!-- Left Sleeve -->
+  <path d="M 140 135 L 85 160 L 95 210 L 135 185 Z" fill="#be123c" filter="url(#shadow)"/>
+  <line x1="85" y1="205" x2="100" y2="215" stroke="#facc15" stroke-width="4"/>
+
+  <!-- Right Sleeve -->
+  <path d="M 260 135 L 315 160 L 305 210 L 265 185 Z" fill="#9f1239" filter="url(#shadow)"/>
+  <line x1="315" y1="205" x2="300" y2="215" stroke="#facc15" stroke-width="4"/>
+
+  <!-- Fitted Blouse Bodice (Sweetheart Neckline) -->
+  <path d="M 140 135 Q 170 180 200 165 Q 230 180 260 135 L 255 255 Q 200 260 145 255 Z" fill="url(#brocade)" filter="url(#shadow)"/>
+
+  <!-- Gold Zari Neckline Embroidery -->
+  <path d="M 140 135 Q 170 180 200 165 Q 230 180 260 135" stroke="#facc15" stroke-width="3.5" fill="none"/>
+  
+  <!-- Intricate Zari Buttas (Motifs) -->
+  <circle cx="170" cy="210" r="4" fill="#facc15"/>
+  <circle cx="230" cy="210" r="4" fill="#facc15"/>
+  <circle cx="200" cy="230" r="4" fill="#facc15"/>
+
+  <!-- Gold Hem Band at Waist -->
+  <path d="M 145 253 Q 200 258 255 253" stroke="#facc15" stroke-width="4" fill="none"/>
+
+  <!-- Label Badge -->
+  <rect x="115" y="340" width="170" height="28" rx="14" fill="#1f1836" stroke="#facc15" stroke-width="1"/>
+  <text x="200" y="358" font-family="sans-serif" font-size="11" font-weight="bold" fill="#fde047" text-anchor="middle">REAL SAREE BLOUSE</text>
+</svg>

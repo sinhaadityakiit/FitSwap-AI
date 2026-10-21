@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#181329"/>
+      <stop offset="100%" stop-color="#0e0a1a"/>
+    </linearGradient>
+    <linearGradient id="blouse" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#e9d5ff"/>
+      <stop offset="50%" stop-color="#c084fc"/>
+      <stop offset="100%" stop-color="#9333ea"/>
+    </linearGradient>
+    <filter id="shadow">
+      <feDropShadow dx="0" dy="6" stdDeviation="5" flood-color="#000" flood-opacity="0.4"/>
+    </filter>
+  </defs>
+  <rect width="400" height="400" rx="32" fill="url(#bg)"/>
+  <circle cx="200" cy="200" r="140" fill="#221a38" opacity="0.4"/>
+
+  <!-- SILK PUFF-SLEEVE BLOUSE -->
+  <!-- Romantic V-Neck with Bow Tie -->
+  <!-- Left Puff Sleeve -->
+  <path d="M 140 120 Q 90 140 100 200 L 130 195 L 140 160 Z" fill="#c084fc" filter="url(#shadow)"/>
+  <!-- Right Puff Sleeve -->
+  <path d="M 260 120 Q 310 140 300 200 L 270 195 L 260 160 Z" fill="#a855f7" filter="url(#shadow)"/>
+
+  <!-- Blouse Torso Body -->
+  <path d="M 145 125 Q 200 155 255 125 L 260 285 Q 200 295 140 285 Z" fill="url(#blouse)" filter="url(#shadow)"/>
+
+  <!-- Neckline Bow / Pussy-bow Ribbon -->
+  <path d="M 185 140 Q 165 170 175 220 L 185 220 Q 185 170 195 145 Z" fill="#f3e8ff"/>
+  <path d="M 215 140 Q 235 170 225 220 L 215 220 Q 215 170 205 145 Z" fill="#f3e8ff"/>
+  <circle cx="200" cy="142" r="5" fill="#f3e8ff"/>
+
+  <!-- Subtle Ruffle Pleating Lines -->
+  <path d="M 170 160 Q 175 220 165 280" stroke="#f3e8ff" stroke-width="1.5" opacity="0.6" fill="none"/>
+  <path d="M 230 160 Q 225 220 235 280" stroke="#f3e8ff" stroke-width="1.5" opacity="0.6" fill="none"/>
+
+  <!-- Label Badge -->
+  <rect x="120" y="340" width="160" height="28" rx="14" fill="#1f1836" stroke="#c084fc" stroke-width="1"/>
+  <text x="200" y="358" font-family="sans-serif" font-size="11" font-weight="bold" fill="#e9d5ff" text-anchor="middle">REAL SILK BLOUSE</text>
+</svg>

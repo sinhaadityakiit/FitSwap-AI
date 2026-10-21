@@ -1,0 +1,46 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#181329"/>
+      <stop offset="100%" stop-color="#0e0a1a"/>
+    </linearGradient>
+    <linearGradient id="aqua" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#38bdf8"/>
+      <stop offset="50%" stop-color="#0284c7"/>
+      <stop offset="100%" stop-color="#0369a1"/>
+    </linearGradient>
+    <filter id="shadow">
+      <feDropShadow dx="0" dy="6" stdDeviation="5" flood-color="#000" flood-opacity="0.4"/>
+    </filter>
+  </defs>
+  <rect width="400" height="400" rx="32" fill="url(#bg)"/>
+  <circle cx="200" cy="200" r="140" fill="#221a38" opacity="0.4"/>
+
+  <!-- BIKINI TOP -->
+  <!-- Halter Neck Ties -->
+  <path d="M 200 65 L 145 130" stroke="#7dd3fc" stroke-width="3" stroke-linecap="round"/>
+  <path d="M 200 65 L 255 130" stroke="#7dd3fc" stroke-width="3" stroke-linecap="round"/>
+  <circle cx="200" cy="65" r="3" fill="#38bdf8"/>
+
+  <!-- Left Triangle Cup -->
+  <path d="M 145 130 L 105 190 Q 145 195 185 190 Z" fill="url(#aqua)" filter="url(#shadow)"/>
+  <!-- Right Triangle Cup -->
+  <path d="M 255 130 L 215 190 Q 255 195 295 190 Z" fill="url(#aqua)" filter="url(#shadow)"/>
+  
+  <!-- Underbust String -->
+  <path d="M 75 190 L 325 190" stroke="#7dd3fc" stroke-width="3.5" stroke-linecap="round"/>
+
+  <!-- BIKINI BOTTOM (Tie-Side) -->
+  <path d="M 125 240 Q 200 248 275 240 L 225 315 Q 200 325 175 315 Z" fill="url(#aqua)" filter="url(#shadow)"/>
+
+  <!-- Side ties with loops -->
+  <path d="M 125 240 Q 95 235 80 245" stroke="#7dd3fc" stroke-width="3" stroke-linecap="round"/>
+  <path d="M 275 240 Q 305 235 320 245" stroke="#7dd3fc" stroke-width="3" stroke-linecap="round"/>
+
+  <!-- Tropical Leaf subtle overlay -->
+  <path d="M 190 260 Q 200 270 210 260 Q 205 285 200 290 Q 195 285 190 260 Z" fill="#0284c7" opacity="0.5"/>
+
+  <!-- Label Badge -->
+  <rect x="130" y="340" width="140" height="28" rx="14" fill="#1f1836" stroke="#38bdf8" stroke-width="1"/>
+  <text x="200" y="358" font-family="sans-serif" font-size="11" font-weight="bold" fill="#7dd3fc" text-anchor="middle">REAL BIKINI SET</text>
+</svg>

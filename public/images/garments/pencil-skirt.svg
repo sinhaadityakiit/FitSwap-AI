@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#181329"/>
+      <stop offset="100%" stop-color="#0e0a1a"/>
+    </linearGradient>
+    <linearGradient id="pencil" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#334155"/>
+      <stop offset="50%" stop-color="#1e293b"/>
+      <stop offset="100%" stop-color="#0f172a"/>
+    </linearGradient>
+    <filter id="shadow">
+      <feDropShadow dx="0" dy="6" stdDeviation="5" flood-color="#000" flood-opacity="0.4"/>
+    </filter>
+  </defs>
+  <rect width="400" height="400" rx="32" fill="url(#bg)"/>
+  <circle cx="200" cy="200" r="140" fill="#221a38" opacity="0.4"/>
+
+  <!-- FORMAL HIGH-WAIST PENCIL SKIRT -->
+  <!-- Contoured Fitted Waist -->
+  <path d="M 140 145 Q 200 155 260 145 L 265 170 Q 200 178 135 170 Z" fill="#0f172a" filter="url(#shadow)"/>
+
+  <!-- Bodycon Tapered Silhouette -->
+  <path d="M 135 170 Q 200 178 265 170 Q 280 220 250 300 Q 200 308 150 300 Q 120 220 135 170 Z" fill="url(#pencil)" filter="url(#shadow)"/>
+
+  <!-- Back Vent / Slit Hint -->
+  <line x1="200" y1="270" x2="200" y2="304" stroke="#64748b" stroke-width="2"/>
+
+  <!-- Tailored Dart Seams -->
+  <path d="M 165 170 L 168 205" stroke="#475569" stroke-width="1.5"/>
+  <path d="M 235 170 L 232 205" stroke="#475569" stroke-width="1.5"/>
+
+  <!-- Label Badge -->
+  <rect x="120" y="340" width="160" height="28" rx="14" fill="#1f1836" stroke="#475569" stroke-width="1"/>
+  <text x="200" y="358" font-family="sans-serif" font-size="11" font-weight="bold" fill="#e2e8f0" text-anchor="middle">REAL PENCIL SKIRT</text>
+</svg>

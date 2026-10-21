@@ -1,0 +1,44 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#181329"/>
+      <stop offset="100%" stop-color="#0e0a1a"/>
+    </linearGradient>
+    <linearGradient id="nude" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#fed7aa"/>
+      <stop offset="50%" stop-color="#fb923c"/>
+      <stop offset="100%" stop-color="#ea580c"/>
+    </linearGradient>
+    <filter id="shadow">
+      <feDropShadow dx="0" dy="6" stdDeviation="5" flood-color="#000" flood-opacity="0.4"/>
+    </filter>
+  </defs>
+  <rect width="400" height="400" rx="32" fill="url(#bg)"/>
+  <circle cx="200" cy="200" r="140" fill="#221a38" opacity="0.4"/>
+
+  <!-- STRAPLESS BANDEAU / MOLDED BRA (NO STRAPS) -->
+  <!-- Back Wings with Silicone Grip Ribs -->
+  <path d="M 60 205 L 110 200 L 110 245 L 60 230 Z" fill="#c2410c"/>
+  <path d="M 340 205 L 290 200 L 290 245 L 340 230 Z" fill="#c2410c"/>
+
+  <!-- Left Molded Cup (Straight Topline) -->
+  <path d="M 110 200 Q 155 195 190 210 Q 185 260 145 265 Q 110 260 110 200 Z" fill="url(#nude)" filter="url(#shadow)"/>
+  
+  <!-- Right Molded Cup (Straight Topline) -->
+  <path d="M 290 200 Q 245 195 210 210 Q 215 260 255 265 Q 290 260 290 200 Z" fill="url(#nude)" filter="url(#shadow)"/>
+
+  <!-- Center Bridge -->
+  <rect x="190" y="215" width="20" height="25" rx="3" fill="#ea580c"/>
+  <circle cx="200" cy="227" r="3" fill="#ffedd5"/>
+
+  <!-- Silicone Grip Lining along Top Edge -->
+  <path d="M 70 205 Q 200 190 330 205" stroke="#ffedd5" stroke-width="2" stroke-dasharray="2,3" fill="none"/>
+  
+  <!-- Underwire support ridge -->
+  <path d="M 110 220 Q 150 270 190 240" stroke="#9a3412" stroke-width="2.5" fill="none"/>
+  <path d="M 290 220 Q 250 270 210 240" stroke="#9a3412" stroke-width="2.5" fill="none"/>
+
+  <!-- Label Badge -->
+  <rect x="110" y="340" width="180" height="28" rx="14" fill="#1f1836" stroke="#ea580c" stroke-width="1"/>
+  <text x="200" y="358" font-family="sans-serif" font-size="11" font-weight="bold" fill="#fed7aa" text-anchor="middle">REAL STRAPLESS BRA</text>
+</svg>
